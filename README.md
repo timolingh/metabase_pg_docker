@@ -5,7 +5,7 @@ This set up is verified to work.  It configures an instance of Metabase with Pos
 # Table of Contents <!-- omit in toc --> 
 - [Prepering](#prepering)
 - [Run](#run)
-- [Roadmap](#roadmap)
+
 
 ## Prepering
 First, you need to create `.env` file;
@@ -22,8 +22,3 @@ docker-compose up -d
 
 and then point to `localhost:3000`. It may take couple of minutes to get a response until containers are up and running. You may use PgAdmin4 in case needed from `localhots:3001`.
 
-## Roadmap
-- [ ] MongoDB setup at the start
-- [ ] Improve documentation
-- [ ] Clustering?
-- [ ] Inject sample data
