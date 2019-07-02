@@ -1,7 +1,6 @@
-# metabase-docker-compose :whale: <!-- omit in toc --> 
-This project aims to build a production ready docker-compose file for Metabase.
+# metabase_pg_docker <!-- omit in toc --> 
+This set up is verified to work.  It configures an instance of Metabase with Postgres as an application database and launches it via `docker-compose`.  It is pretty much a clone of:  https://github.com/thiras/metabase-docker-compose
 
-> [PR](https://github.com/thiras/metabase-docker-compose/pulls) are welcome. Contributors should comply with [code of conduct](https://github.com/thiras/metabase-docker-compose/blob/master/CODE_OF_CONDUCT.md).
 
 # Table of Contents <!-- omit in toc --> 
 - [Prepering](#prepering)
