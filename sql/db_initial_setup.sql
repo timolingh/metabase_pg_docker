@@ -2,7 +2,7 @@
 -- create database metabase;
 
 -- role
-create role dataeng nologin;
+create role dataeng login password 'change_me';
 create role viewer nologin;
 
 -- create schemas
@@ -23,6 +23,12 @@ alter default privileges in schema staging grant all on sequences to dataeng;
 alter default privileges in schema prod grant all on sequences to dataeng;
 
 -- users
+-- create role dataeng login password 'change_me';
 create role tim with role dataeng login password 'change_me';
 create role mb with role viewer login password 'change_me';
+
+-- change owership of schemas
+alter schema landing owner to dataeng;
+alter schema staging owner to dataeng;
+alter schema prod owner to dataeng;
 
