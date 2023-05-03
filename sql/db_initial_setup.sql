@@ -11,6 +11,8 @@ create schema staging;
 create schema prod;
 
 -- grants
+alter default privileges grant all on schemas to dataeng;
+
 alter default privileges in schema landing grant all on tables to dataeng;
 alter default privileges in schema staging grant all on tables to dataeng;
 alter default privileges in schema prod grant all on tables to dataeng;
