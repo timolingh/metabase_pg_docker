@@ -24,6 +24,7 @@ alter default privileges in schema prod grant all on sequences to dataeng;
 
 -- users
 -- create role dataeng login password 'change_me';
+grant dataeng to postgres;
 create role tim with role dataeng login password 'change_me';
 create role mb with role viewer login password 'change_me';
 
