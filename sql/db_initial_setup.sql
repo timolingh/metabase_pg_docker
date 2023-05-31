@@ -23,7 +23,8 @@ grant usage on schema prod to viewer;
 alter default privileges in schema landing grant all on tables to dataeng;
 alter default privileges in schema staging grant all on tables to dataeng;
 alter default privileges in schema prod grant all on tables to dataeng;
-alter default privileges in schema prod grant select on tables to viewer;
+alter default privileges in schema prod for role dataeng 
+    grant select on tables to viewer;
 
 alter default privileges in schema landing grant all on sequences to dataeng;
 alter default privileges in schema staging grant all on sequences to dataeng;
