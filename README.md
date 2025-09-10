@@ -22,3 +22,10 @@ docker-compose up -d
 
 and then point to `localhost:3000`. It may take couple of minutes to get a response until containers are up and running. You may use PgAdmin4 in case needed from `localhots:3001`.
 
+## Tips
+```
+# check firewall managed by iptables
+sudo iptables -L -n -v | grep 3000
+
+```
+
